@@ -1,0 +1,38 @@
+
+git init
+
+#untuk melihat sudah tracking or untracked (hijau/merah)
+git status
+
+#untuk menambahkan semua file yg untracked menjadi tracking.
+git add .
+
+//untuk commit semua file yg telah ditracking dan masih dalam file local
+git commit -m "keterangan"
+
+//add origin repo
+git remote add origin 'link repo'
+
+//branch main/master
+git branch -M main/master
+
+//push file yg telah diubah
+git push -u origin main/master
+
+//untuk membuat branch baru
+git branch 'nama branch'
+
+//untuk delete branch
+git branch -D 'nama branch'
+
+//pindah branch
+git checkout 'nama branch'
+
+//melihat log komit/push
+git log
+
+//untuk kembali ke restore point
+git revert -n 'nomor komit'
+
+//untuk merge branch
+git merge 'nama branch'
